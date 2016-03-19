@@ -1,0 +1,694 @@
+/*初始化 初始化 初始化 初始化 初始化 初始化 初始化 初始化 初始化*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*标题栏 标题栏 标题栏 标题栏 标题栏 标题栏 标题栏 标题栏 标题栏*/
+#header{
+    width: 100%;
+    height: 120px;
+    background-color: #a3d2d8;
+    position: relative;
+}
+.header{
+    background: url("../images/title.png") no-repeat 70px 0;
+}
+#header ul.nav{          /*标题栏菜单导航*/
+    width: 700px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #3a494c;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+}
+#header ul.nav li:first-child{
+    width: 100px;
+}
+#header ul.nav li:nth-child(2){
+    width: 120px;
+}
+#header ul.nav li:nth-child(3){
+    width: 125px;
+}
+#header ul.nav li:nth-child(4){
+    width: 85px;
+}
+#header ul.nav li:last-child{
+    width: 120px;
+}
+#header ul.nav li{
+    float: left;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 45px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#header ul.nav li.but,#header ul.nav li:hover{
+    color: #a3d2d8;
+    background-color: #3a494c;
+}
+/*网页换肤 网页换肤 网页换肤 网页换肤 网页换肤 网页换肤 网页换肤*/
+#change_skin{
+    width: 100%;
+    height: 43px;
+    position: relative;
+}
+#change_skin #skin{
+    width: 500px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 1px;
+}
+#change_skin li{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#change_skin #skin_0{
+    background-color: lightcoral; /*主题色*/
+}
+#change_skin #skin_1{
+    background-color: #a3d2d8; /*天蓝色*/
+}
+#change_skin #skin_2{
+    background-color: #9ad5a7; /*浅绿色*/
+}
+#change_skin #skin_3{
+    background-color: #e1b7c5; /*浅粉色*/
+}
+#change_skin #skin_4{
+    background-color: #3a494c; /*酷黑色*/
+}
+#change_skin #skin li.selected{
+    background: url("../images/yui.png") no-repeat 8px 0;
+}
+#change_skin div.tab_box{
+    width: 150px;
+    height: 43px;
+    position: absolute;
+    right: 300px;
+    top: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #a3d2d8;
+}
+#change_skin div.tab_box div.hide{
+    display: none;
+}
+/*轮播图 轮播图 轮播图 轮播图 轮播图 轮播图 轮播图 轮播图 轮播图*/
+#lun_bo{
+    width: 100%;
+    height: 520px;
+    background-color: #a3d2d8;
+}
+#lun_bo div.container{
+    width: 1060px;
+    height: 500px;
+    position: relative;
+    left: 150px;
+    top: 20px;
+    overflow: hidden;
+}
+#lun_bo ul.content{
+    width: 3180px;
+    height: 500px;
+    position: relative;
+}
+#lun_bo ul.content li{
+    float: left;
+}
+#lun_bo ul.btn{       /*轮播图底部的小按钮*/
+    width: 600px;
+    height: 100px;
+    z-index: 9999;
+    position: absolute;
+    top: 450px;
+    left: 450px;
+}
+#lun_bo ul.btn li{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #a3d2d8;
+    z-index: 9999;
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+}
+#lun_bo ul.btn li.high{
+    background-color: white;
+}
+#lun_bo div.move{         /*轮播图左右轮播按钮*/
+    display: none;
+}
+#lun_bo #move_left,#lun_bo #move_right{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: transparent;
+    color: rgba(0,0,0,0.72);
+    font-size: 110px;
+    position: absolute;
+    top: 150px;
+    z-index: 9999;
+}
+#lun_bo #move_left{
+    left: 0;
+}
+#lun_bo #move_right{
+    right: 0;
+}
+
+/*interview interview interview interview interview interview interview */
+#interview{
+    width: 100%;
+    height: 535px;
+    background-color: #a3d2d8;
+}
+#interview div{
+    display: inline-block;
+    width: 370px;
+    height: 400px;
+    position: relative;
+    top: 130px;
+    left: 90px;
+    text-align: center;
+}
+#interview div h2{
+    font-weight: bold;
+    color: #1d1d1d;
+    margin-top: 15px;
+}
+#interview div p{
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 25px;
+    color: grey;
+}
+
+/*works works works works works works works works works works works*/
+#works{
+    width: 100%;
+    height: 1165px;
+    background-color: #a3d2d8;
+}
+#works h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+#works p{
+    font-size: 18px;
+    color: gainsboro;
+    width: 560px;
+    position: relative;
+    left: 400px;
+    top: 15px;
+}
+#works .p1{
+    left: 470px;
+}
+#works ul.menu{          /*work中的菜单导航*/
+    width: 1170px;
+    height: 55px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    left: 170px;
+    top: 75px;
+    font-size: 20px;
+    color: white;
+}
+#works ul.menu li:first-child{
+    width: 100px;
+    color: #3a494c;
+    background-color: white;
+    border-radius: 10px;
+}
+#works ul.menu li:nth-child(2){
+    width: 110px;
+}
+#works ul.menu li:nth-child(3){
+    width: 150px;
+}
+#works ul.menu li:nth-child(4){
+    width: 225px;
+}
+#works ul.menu li:last-child{
+    width: 140px;
+}
+#works ul.menu li{
+    float: left;
+    margin-left: 53px;
+    height: 50px;
+    border: 2px solid #a3d2d8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#works ul.menu li:hover{
+    border-color: white;
+}
+#works ul.menu li.first:hover{
+    border: 2px solid white;
+}
+#works ul.work_pic{         /*work中的鼠标经过图片提示*/
+    width: 1300px;
+    height: 640px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+#works ul.work_pic li{
+    float: left;
+    width: 340px;
+    height: 242px;
+    overflow: hidden;
+    margin-left: 85px;
+    margin-top: 85px;
+    position: relative;
+}
+#works ul.work_pic li img{
+    position: absolute;
+}
+#works ul.work_pic li p{
+    width: 340px;
+    height: 40px;
+    font-size: 15px;
+    background-color: #3a494c;
+    color: white;
+    position: absolute;
+    top: 202px;
+    left: 0;
+    display: block;
+}
+#works div{                 /*work中的show more*/
+    width: 260px;
+    height: 80px;
+    text-align: center;
+    line-height: 45px;
+    color: grey;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    left: 550px;
+    cursor: pointer;
+}
+#works div:hover{
+    color: white;
+    background-color: grey;
+}
+
+/*new new new new new new new new new new new new new new*/
+#new{
+    width: 100%;
+    height: 960px;
+    background-color: #a3d2d8;
+}
+#new div.box_1,div.box_2{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+#new div.box_1{
+    border-bottom: 2px solid gainsboro;
+    top: 80px;
+}
+#new div.box_2{
+    top: 130px;
+}
+#new div.box_1 img{
+    float: left;
+    margin-right: 50px ;
+}
+#new div.box_2 img{
+    float: right;
+}
+#new div.box_1 h1,div.box_2 h1{
+    color: #3a494c;
+}
+#new p{
+    font-size: 22px;
+    color: darkgray;
+    margin-top: 15px;
+}
+#new span.show{               /*new中的show more*/
+    display: inline-block;
+    width: 175px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background-color: #9ad5a7;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#new span.one{
+    background-color: #e1b7c5;
+}
+#new span.show:hover{
+    background-color: #3a494c;
+}
+#new div.box_1 h1:hover,#new div.box_2 h1:hover{
+    color: gainsboro;
+}
+
+/*team team team team team team team team team team team team team*/
+#team{
+    width: 100%;
+    height: 850px;
+    background-color: #a3d2d8;
+}
+#team h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+#team p{
+    font-size: 18px;
+    color: gainsboro;
+    width: 560px;
+    position: relative;
+    left: 400px;
+    top: 35px;
+}
+#team .p1{
+    left: 470px;
+}
+#team div.box{                 /*team中的三个盒子*/
+    width: 1250px;
+    height: 500px;
+    margin: 120px auto;
+}
+#team div.box div{
+    width: 310px;
+    height: 500px;
+    background-color: white;
+    float: left;
+    margin-left: 80px;
+    text-align: center;
+}
+#team div.box div h1{
+    color: #1d1d1d;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: -20px;
+}
+#team div.box h3{
+    margin-top: 35px;
+    color: #3a494c;
+}
+#team div.box p{
+    color: grey;
+    width: 310px;
+    position: relative;
+    left: 0;
+    top: 15px;
+}
+#team img.sign{
+    margin-top: 40px;
+}
+#team div.sign_word{              /*team中的鼠标经过小图标有提示*/
+    position: absolute;
+    max-width: 100px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 4px 5px;
+    border-radius: 3px;
+    border: 1px solid #818181;
+    z-index: 9999;
+}
+
+/*posts posts posts posts posts posts posts posts posts posts posts*/
+#posts{
+    width: 100%;
+    height: 900px;
+    background-color: #a3d2d8;
+}
+#posts h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+#posts p{
+    font-size: 18px;
+    color: gainsboro;
+    width: 560px;
+    position: relative;
+    left: 400px;
+    top: 35px;
+}
+#posts .p1{
+    left: 470px;
+}
+#posts div.box{             /*posts中的三个盒子*/
+    width: 1300px;
+    height: 480px;
+    margin: 100px auto;
+}
+#posts div.box div{
+    width: 360px;
+    height: 480px;
+    background-color: white;
+    float: left;
+    margin-left: 55px;
+    text-align: center;
+}
+#posts div.box div h2{
+    color: #1d1d1d;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: 15px;
+}
+#posts div.box h3{
+    margin-top: 5px;
+    color: #818181;
+}
+#posts div.box p{
+    color: #818181;
+    width: 310px;
+    position: relative;
+    left: 30px;
+    top: 15px;
+}
+#posts div.show{                /*posts中的show more*/
+    width: 260px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: grey;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: -40px;
+    left: 550px;
+    cursor: pointer;
+}
+#posts div.show:hover{
+    color: white;
+    background-color: grey;
+}
+
+/*contact contact contact contact contact contact contact contact contact*/
+#contact{
+    width: 100%;
+    height: 1060px;
+    background-color: #a3d2d8;
+}
+#contact h1{
+    font-size: 60px;
+    color: #818181;
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+#contact p{
+    font-size: 18px;
+    color: #818181;
+    width: 560px;
+    position: relative;
+    left: 400px;
+    top: 35px;
+}
+#contact .p1{
+    left: 470px;
+}
+#contact form{             /*contact中的表单*/
+    width: 900px;
+    height: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+#contact form input,textarea{
+    border-radius: 15px;
+    margin-top: 30px;
+    font-size: 28px;
+    color: #818181;
+}
+#contact form input.username,.email{
+    width: 735px;
+    height: 70px;
+    text-indent: 12px;
+}
+#contact form textarea{
+    width: 735px;
+    height: 220px;
+    text-indent: 12px;
+}
+#contact form input.send{
+    width: 180px;
+    height: 90px;
+    color: #3a494c;
+    border: 0;
+    cursor: pointer;
+}
+#contact form input.send:hover{
+    color: white;
+    background-color: #3a494c;
+}
+#contact form div.int{
+    width: 800px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+}
+#contact form strong.star{       /*contact中的表单验证效果*/
+    color: #818181;
+    font-size: 32px;
+    position: absolute;
+    right: 0;
+    top: 55px;
+}
+#contact form span.formtips{
+    color: #818181;
+    font-size: 22px;
+    font-family: "幼圆";
+    position: absolute;
+    left: 260px;
+    top: 110px;
+}
+#contact hr{
+    width: 1200px;
+    border: 1px solid #3a494c;
+    margin: 0 auto;
+}
+#contact ul.icon{                /*contact尾部的小图标*/
+    width: 350px;
+    height: 61px;
+    margin-top: 30px;
+    margin-left: 55px;
+}
+#contact ul.icon li{
+    float: left;
+    width: 58px;
+    height: 58px;
+    margin-left: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#contact ul.icon li:first-child{
+    background: url("../images/contact_1.png") no-repeat -2px -2px;
+}
+#contact ul.icon li:nth-child(2){
+    background: url("../images/contact_2.png") no-repeat -2px -2px;
+}
+#contact ul.icon li:nth-child(3){
+    background: url("../images/contact_3.png") no-repeat -2px -2px;
+}
+#contact ul.icon li:last-child{
+    background: url("../images/contact_4.png") no-repeat -2px -2px;
+}
+#contact ul.icon li:first-child:hover{
+    background: url("../images/contact_5.png") no-repeat -2px -2px;
+}
+#contact ul.icon li:nth-child(2):hover{
+    background: url("../images/contact_6.png") no-repeat -2px -2px;
+}
+#contact ul.icon li:nth-child(3):hover{
+    background: url("../images/contact_7.png") no-repeat -2px -2px;
+}
+#contact ul.icon li:last-child:hover{
+    background: url("../images/contact_8.png") no-repeat -2px -2px;
+}
+#contact span{          /*contact尾部的copyright*/
+    font-size: 18px;
+    position: relative;
+    top: -40px;
+    left:990px;
+}
+#contact span.copyright{
+    margin-left: 5px;
+}
+#contact span.copyright{
+    color: #818181;
+}
+#contact span.author,span.yui{
+    color: #3a494c;
+}
+#contact span.author{
+    font-family: "幼圆";
+}
+
+/*返回顶部和底部    返回顶部和底部     返回顶部和底部   返回顶部和底部*/
+#turn{
+    display: none;
+}
+#turn div.turn_top,#turn div.turn_bottom{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.42);
+    color: white;
+    font-family: cursive;
+    font-size: 18px;
+    position: fixed;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#turn div.turn_top{
+    bottom: 120px;
+}
+#turn div.turn_bottom{
+    bottom: 50px;
+}
+#turn div.turn_top:hover,#turn div.turn_bottom:hover{
+    background-color: rgba(252,252,252,0.42);
+    color: black;
+    border-radius: 50%;
+}
